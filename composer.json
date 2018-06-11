@@ -1,0 +1,16 @@
+{
+    "name": "avitus27/gpdb",
+    "description": "A tool for showing GPs that provide the services you need.",
+    "require": {
+        "egeloen/google-map": "^2.0",
+        "vlucas/phpdotenv": "^2.4",
+        "joshcam/mysqli-database-class": "^2.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mervyn Galvin",
+            "email": "mervyn511@gmail.com"
+        }
+    ]
+}
