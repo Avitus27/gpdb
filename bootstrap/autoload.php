@@ -5,14 +5,18 @@
 	$dotenv->load();
 	$dotenv->required(['DB_HOST', 'DB_USER', 'DB_PASS', 'DB_BASE', 'GOOGLE_API_KEY']);
 
-	$host = $_ENV['DB_HOST']; $database = $_ENV['DB_BASE'];
-	$user = $_ENV['DB_USER']; $pass = $_ENV['DB_PASS'];
+	$host = $_ENV['DB_HOST'];
+	$database = $_ENV['DB_BASE'];
+	$user = $_ENV['DB_USER'];
+	$pass = $_ENV['DB_PASS'];
 	$db = new MysqliDb($host, $user, $pass, $database);
 	$db->setPrefix('gpdb_');
+	dbObject::autoload("models");
 
 	use Ivory\GoogleMap\Helper\Builder\ApiHelperBuilder;
 	use Ivory\GoogleMap\Helper\Builder\MapHelperBuilder;
 	use Ivory\GoogleMap\Map;
+	use Ivory\GoogleMap\Base\Coordinate;
 
 	$map = new Map();
 
