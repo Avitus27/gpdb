@@ -2,6 +2,7 @@
 function generateInfoWindowText($row){
     $result = "";
     $result .= "Name: <div class='infoRight'>" . $row["name"] . "</div></br>";
+    $result .= "Contact: <div class='infoRight'><a href='tel:" . $row["contact"] . "'>" . $row["contact"] . "</a></div></br>";
     $result .= "Trans Friendly: <div class='infoRight'>" . asYesNo($row["trans_friendly"]) . "</div></br>";
     $result .= "Choice Friendly: <div class='infoRight'>" . asYesNo($row["choice_friendly"]) . "</div></br>";
     $result .= "Accepts Medical Card: <div class='infoRight'>" . asYesNo($row["medical_card_friendly"]) . "</div></br>";
