@@ -61,7 +61,7 @@
         }
 	$db->where('c.name', $_POST["counties"], 'IN');
     }
-    $points = $db->get('gp g');
+    $points = $db->get('gp g', null, "g.id, g.name as name, g.latitude, g.longitude, g.trans_friendly, g.choice_friendly, g.medical_card_friendly, g.ready_to_refer, a.name as area, c.name as county");
     foreach($points as $point){
 	$marker = new Marker(
             new Coordinate($point['longitude'], $point['latitude']),
