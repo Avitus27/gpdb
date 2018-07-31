@@ -7,11 +7,11 @@
 $ git clone https://github.com/Avitus27/gpdb
 $ cp .env.example .env
 $ nano .env
-$ ln -s /route/to/web/folder /public
+$ ln -s /route/to/web/folder ./public
 ```
 Go to the install directory in a browser to set up the datebase for the first time.
 ```
-$ rm -rf public/install
+$ rm -rf ./public/install
 ```
 Then you can add info to your database via whatever means you like.
 
