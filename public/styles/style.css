@@ -1,8 +1,8 @@
 .infoRight{
-    display:inline;
-    float:right;
+	display:inline;
+	float:right;
 }
 #map_canvas{
-    width:100% !important;
-    height:80% !important;
+	width:100% !important;
+	height:80% !important;
 }
