@@ -43,7 +43,7 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="pass" name="pass" type="password" required=required">
+					<input id="pass" name="pass" type="password" required="required">
 					<label for="pass">Password</label>
 				</div>
 			</div>

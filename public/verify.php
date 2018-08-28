@@ -43,7 +43,7 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="token" name="token" type="text" required=required">
+					<input id="token" name="token" type="text" required="required">
 					<label for="token">Token</label>
 				</div>
 			</div>
