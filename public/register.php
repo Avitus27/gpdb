@@ -52,12 +52,12 @@
 			<div class="row">
 				<div class="input-field col s12">
 					<input id="email" name="email" type="email" required="required" class="validate">
-					<label for"email">Email</label>
+					<label for="email">Email</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="pass" name="pass" type="password" required=required">
+					<input id="pass" name="pass" type="password" required="required">
 					<label for="pass">Password</label>
 				</div>
 			</div>
