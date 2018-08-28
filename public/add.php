@@ -7,6 +7,9 @@
 	if( !$auth->isLoggedIn() ) {
 		header('Location: ./login.php');
 		die();
+	} else if ( !$auth->hasRole(\Delight\Auth\Role::ADMIN) ) {
+		header('Location: ./index.php');
+		die();
 	}
 // Add GP logic here
 ?>
