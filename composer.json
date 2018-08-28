@@ -5,7 +5,7 @@
         "egeloen/google-map": "^2.0",
         "vlucas/phpdotenv": "^2.4",
         "joshcam/mysqli-database-class": "^2.9",
-        "phpauth/phpauth": "^1.1"
+        "delight-im/auth": "^8.0"
     },
     "license": "MIT",
     "authors": [
