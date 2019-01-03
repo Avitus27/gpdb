@@ -50,5 +50,36 @@
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 	var_dump($result);
-
+// add users tables
 ?>
+
+Would you like to create an admin account? This account will be auto-verified. You can add more accounts to the admin group after <a href="../register.php">creating them</a>.
+<form class="col s12" action="./createAdmin.php" method="post">
+<div class="row">
+                                <div class="input-field col s12">
+                                        <input id="user" name="user" type="text" required="required">
+                                        <label for="user">Username</label>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="input-field col s12">
+                                        <input id="email" name="email" type="email" required="required" class="validate">
+                                        <label for="email">Email</label>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="input-field col s12">
+                                        <input id="pass" name="pass" type="password" required="required">
+                                        <label for="pass">Password</label>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="input-field col s12">
+                                        <input id="passConf" name="passConf" type="password" required="required">
+                                        <label for="passConf">Confirm Password</label>
+                                </div>
+                        </div>
+                        <div class="right">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Create Admin<i class="material-icons right">send</i></button>
+                        </div>
+                </form>

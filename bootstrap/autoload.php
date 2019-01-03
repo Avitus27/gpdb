@@ -12,7 +12,7 @@
 	$prefix = $_ENV['DB_PREFIX'];
 	$db = new MysqliDb($host, $user, $pass, $database);
 	$db->setPrefix($prefix);
-	dbObject::autoload("models");
+	dbObject::autoload("/../models");
 
 	use Ivory\GoogleMap\Helper\Builder\ApiHelperBuilder;
 	use Ivory\GoogleMap\Helper\Builder\MapHelperBuilder;
