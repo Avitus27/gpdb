@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+	<title>GPDB</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="container" style="height:98%">
 <?php
 	require_once(__DIR__."/../../vendor/autoload.php"); // Loads anything that's been added via composer
 
@@ -15,7 +25,7 @@
 
 	$result = $db->rawQuery("DROP TABLE IF EXISTS " . $prefix . "area, " . $prefix . "county, " . $prefix . "gp;");
 
-	var_dump($result);
+	// var_dump($result);
 
 	$result = $db->rawQuery("CREATE TABLE IF NOT EXISTS " . $prefix . "county (
 	id INT(11) NOT NULL AUTO_INCREMENT,
@@ -23,7 +33,7 @@
 	primary key (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
-	var_dump($result);
+	// var_dump($result);
 
 	$result = $db->rawQuery("CREATE TABLE IF NOT EXISTS " . $prefix . "area (
 	id INT(11) NOT NULL AUTO_INCREMENT,
@@ -32,7 +42,7 @@
 	primary key (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
-	var_dump($result);
+	// var_dump($result);
 
 	$result = $db->rawQuery("CREATE TABLE IF NOT EXISTS " . $prefix . "gp (
 	id int(11) NOT NULL,
@@ -49,12 +59,12 @@
 	primary key (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
-	var_dump($result);
+	// var_dump($result);
 // add users tables
 ?>
 
 Would you like to create an admin account? This account will be auto-verified. You can add more accounts to the admin group after <a href="../register.php">creating them</a>.
-<form class="col s12" action="./createAdmin.php" method="post">
+<form class="col s12" action="install/createAdmin.php" method="post">
 <div class="row">
                                 <div class="input-field col s12">
                                         <input id="user" name="user" type="text" required="required">
@@ -83,3 +93,5 @@ Would you like to create an admin account? This account will be auto-verified. Y
                                 <button class="btn waves-effect waves-light" type="submit" name="action">Create Admin<i class="material-icons right">send</i></button>
                         </div>
                 </form>
+</body>
+</html>
